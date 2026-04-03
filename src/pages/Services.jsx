@@ -1,7 +1,37 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Services = () => {
+  useEffect(() => {
+    if (window.jQuery && window.jQuery.fn.slick) {
+      window.jQuery('.cs_testimonial_slider').each(function () {
+        var $slickActive = window.jQuery(this).find('.cs_slider_activate');
+        if (!$slickActive.hasClass('slick-initialized')) {
+          $slickActive.slick({
+            slidesToShow: 4,
+            infinite: true,
+            slidesToScroll: 1,
+            variableWidth: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            prevArrow: window.jQuery(this).find('.cs_slider_prev'),
+            nextArrow: window.jQuery(this).find('.cs_slider_next'),
+          });
+        }
+      });
+    }
+
+    return () => {
+      if (window.jQuery && window.jQuery.fn.slick) {
+        window.jQuery('.cs_testimonial_slider .cs_slider_activate').each(function () {
+          if (window.jQuery(this).hasClass('slick-initialized')) {
+            window.jQuery(this).slick('unslick');
+          }
+        });
+      }
+    };
+  }, []);
+
   return (
     <>
 
@@ -11,7 +41,7 @@ const Services = () => {
     
 
     
-    <section className="cs_page_header position-relative background-filled d-flex align-items-center justify-content-between" data-src="/assets/img/page_header_1.jpeg">
+    <section className="cs_page_header position-relative background-filled d-flex align-items-center justify-content-between" style={{ backgroundImage: "url('/assets/img/page_header_1.jpeg')" }}>
       <div className="container position-relative z-index-1">
         <nav aria-label="breadcrumb">
           <ol className="breadcrumb text-white cs_fs_18 cs_mb_5">
@@ -71,7 +101,7 @@ const Services = () => {
                     <path d="M20.8491 11.347C20.855 11.3381 20.8602 11.3289 20.8656 11.3198C20.8706 11.3114 20.8759 11.3032 20.8805 11.2946C20.8855 11.2853 20.8897 11.2757 20.8942 11.2663C20.8984 11.2573 20.9029 11.2484 20.9067 11.2392C20.9105 11.23 20.9136 11.2206 20.9169 11.2113C20.9205 11.2014 20.9243 11.1916 20.9274 11.1814C20.9302 11.1721 20.9322 11.1626 20.9346 11.1532C20.9372 11.1429 20.9401 11.1327 20.9422 11.1222C20.9444 11.1113 20.9456 11.1003 20.9472 11.0894C20.9485 11.0801 20.9503 11.0711 20.9512 11.0617C20.9532 11.0415 20.9543 11.0213 20.9543 11.001C20.9543 11.0007 20.9543 11.0004 20.9543 11.0001C20.9543 10.9998 20.9543 10.9994 20.9543 10.9991C20.9542 10.9789 20.9532 10.9586 20.9512 10.9384C20.9503 10.929 20.9485 10.92 20.9472 10.9108C20.9456 10.8998 20.9444 10.8888 20.9422 10.8779C20.9401 10.8674 20.9372 10.8572 20.9346 10.8469C20.9322 10.8375 20.9302 10.828 20.9274 10.8187C20.9243 10.8086 20.9205 10.7988 20.9169 10.7889C20.9136 10.7795 20.9105 10.7701 20.9067 10.7609C20.9029 10.7517 20.8984 10.7428 20.8941 10.7338C20.8897 10.7244 20.8855 10.7148 20.8805 10.7055C20.8759 10.6969 20.8706 10.6887 20.8656 10.6803C20.8602 10.6712 20.855 10.662 20.8491 10.6531C20.8428 10.6438 20.8359 10.635 20.8292 10.6261C20.8237 10.6187 20.8186 10.6112 20.8127 10.604C20.7996 10.588 20.7858 10.5727 20.7713 10.5581L15.026 4.81285C14.7819 4.56877 14.3862 4.56877 14.1421 4.81285C13.898 5.05692 13.898 5.45264 14.1421 5.69672L18.8204 10.375L0.88388 10.375C0.53871 10.375 0.258878 10.6548 0.258878 11C0.258878 11.3452 0.53871 11.625 0.88388 11.625L18.8204 11.625L14.1421 16.3033C13.8981 16.5474 13.8981 16.9431 14.1421 17.1872C14.3862 17.4312 14.7819 17.4313 15.026 17.1872L20.7713 11.442C20.7858 11.4274 20.7996 11.4121 20.8127 11.3962C20.8186 11.389 20.8237 11.3814 20.8292 11.374C20.8359 11.3651 20.8428 11.3563 20.8491 11.347Z" fill="currentColor"/>
                   </svg>                    
                 </Link>
-                <div className="cs_service_thumb-in position-relative-in background-filled h-100" data-src="/assets/img/service_1.jpeg"></div>
+                <div className="cs_service_thumb-in position-relative-in background-filled h-100" style={{ backgroundImage: "url('/assets/img/service_1.jpeg')" }}></div>
               </div>
             </div>
           </div>
@@ -104,7 +134,7 @@ const Services = () => {
                     <path d="M20.8491 11.347C20.855 11.3381 20.8602 11.3289 20.8656 11.3198C20.8706 11.3114 20.8759 11.3032 20.8805 11.2946C20.8855 11.2853 20.8897 11.2757 20.8942 11.2663C20.8984 11.2573 20.9029 11.2484 20.9067 11.2392C20.9105 11.23 20.9136 11.2206 20.9169 11.2113C20.9205 11.2014 20.9243 11.1916 20.9274 11.1814C20.9302 11.1721 20.9322 11.1626 20.9346 11.1532C20.9372 11.1429 20.9401 11.1327 20.9422 11.1222C20.9444 11.1113 20.9456 11.1003 20.9472 11.0894C20.9485 11.0801 20.9503 11.0711 20.9512 11.0617C20.9532 11.0415 20.9543 11.0213 20.9543 11.001C20.9543 11.0007 20.9543 11.0004 20.9543 11.0001C20.9543 10.9998 20.9543 10.9994 20.9543 10.9991C20.9542 10.9789 20.9532 10.9586 20.9512 10.9384C20.9503 10.929 20.9485 10.92 20.9472 10.9108C20.9456 10.8998 20.9444 10.8888 20.9422 10.8779C20.9401 10.8674 20.9372 10.8572 20.9346 10.8469C20.9322 10.8375 20.9302 10.828 20.9274 10.8187C20.9243 10.8086 20.9205 10.7988 20.9169 10.7889C20.9136 10.7795 20.9105 10.7701 20.9067 10.7609C20.9029 10.7517 20.8984 10.7428 20.8941 10.7338C20.8897 10.7244 20.8855 10.7148 20.8805 10.7055C20.8759 10.6969 20.8706 10.6887 20.8656 10.6803C20.8602 10.6712 20.855 10.662 20.8491 10.6531C20.8428 10.6438 20.8359 10.635 20.8292 10.6261C20.8237 10.6187 20.8186 10.6112 20.8127 10.604C20.7996 10.588 20.7858 10.5727 20.7713 10.5581L15.026 4.81285C14.7819 4.56877 14.3862 4.56877 14.1421 4.81285C13.898 5.05692 13.898 5.45264 14.1421 5.69672L18.8204 10.375L0.88388 10.375C0.53871 10.375 0.258878 10.6548 0.258878 11C0.258878 11.3452 0.53871 11.625 0.88388 11.625L18.8204 11.625L14.1421 16.3033C13.8981 16.5474 13.8981 16.9431 14.1421 17.1872C14.3862 17.4312 14.7819 17.4313 15.026 17.1872L20.7713 11.442C20.7858 11.4274 20.7996 11.4121 20.8127 11.3962C20.8186 11.389 20.8237 11.3814 20.8292 11.374C20.8359 11.3651 20.8428 11.3563 20.8491 11.347Z" fill="currentColor"/>
                   </svg>                    
                 </Link>
-                <div className="cs_service_thumb-in position-relative-in background-filled h-100" data-src="/assets/img/service_2.jpeg"></div>
+                <div className="cs_service_thumb-in position-relative-in background-filled h-100" style={{ backgroundImage: "url('/assets/img/service_2.jpeg')" }}></div>
               </div>
             </div>
           </div>
@@ -134,7 +164,7 @@ const Services = () => {
                     <path d="M20.8491 11.347C20.855 11.3381 20.8602 11.3289 20.8656 11.3198C20.8706 11.3114 20.8759 11.3032 20.8805 11.2946C20.8855 11.2853 20.8897 11.2757 20.8942 11.2663C20.8984 11.2573 20.9029 11.2484 20.9067 11.2392C20.9105 11.23 20.9136 11.2206 20.9169 11.2113C20.9205 11.2014 20.9243 11.1916 20.9274 11.1814C20.9302 11.1721 20.9322 11.1626 20.9346 11.1532C20.9372 11.1429 20.9401 11.1327 20.9422 11.1222C20.9444 11.1113 20.9456 11.1003 20.9472 11.0894C20.9485 11.0801 20.9503 11.0711 20.9512 11.0617C20.9532 11.0415 20.9543 11.0213 20.9543 11.001C20.9543 11.0007 20.9543 11.0004 20.9543 11.0001C20.9543 10.9998 20.9543 10.9994 20.9543 10.9991C20.9542 10.9789 20.9532 10.9586 20.9512 10.9384C20.9503 10.929 20.9485 10.92 20.9472 10.9108C20.9456 10.8998 20.9444 10.8888 20.9422 10.8779C20.9401 10.8674 20.9372 10.8572 20.9346 10.8469C20.9322 10.8375 20.9302 10.828 20.9274 10.8187C20.9243 10.8086 20.9205 10.7988 20.9169 10.7889C20.9136 10.7795 20.9105 10.7701 20.9067 10.7609C20.9029 10.7517 20.8984 10.7428 20.8941 10.7338C20.8897 10.7244 20.8855 10.7148 20.8805 10.7055C20.8759 10.6969 20.8706 10.6887 20.8656 10.6803C20.8602 10.6712 20.855 10.662 20.8491 10.6531C20.8428 10.6438 20.8359 10.635 20.8292 10.6261C20.8237 10.6187 20.8186 10.6112 20.8127 10.604C20.7996 10.588 20.7858 10.5727 20.7713 10.5581L15.026 4.81285C14.7819 4.56877 14.3862 4.56877 14.1421 4.81285C13.898 5.05692 13.898 5.45264 14.1421 5.69672L18.8204 10.375L0.88388 10.375C0.53871 10.375 0.258878 10.6548 0.258878 11C0.258878 11.3452 0.53871 11.625 0.88388 11.625L18.8204 11.625L14.1421 16.3033C13.8981 16.5474 13.8981 16.9431 14.1421 17.1872C14.3862 17.4312 14.7819 17.4313 15.026 17.1872L20.7713 11.442C20.7858 11.4274 20.7996 11.4121 20.8127 11.3962C20.8186 11.389 20.8237 11.3814 20.8292 11.374C20.8359 11.3651 20.8428 11.3563 20.8491 11.347Z" fill="currentColor"/>
                   </svg>                    
                 </Link>
-                <div className="cs_service_thumb-in position-relative-in background-filled h-100" data-src="/assets/img/service_3.jpeg"></div>
+                <div className="cs_service_thumb-in position-relative-in background-filled h-100" style={{ backgroundImage: "url('/assets/img/service_3.jpeg')" }}></div>
               </div>
             </div>
           </div>
@@ -157,7 +187,7 @@ const Services = () => {
                     <path d="M20.8491 11.347C20.855 11.3381 20.8602 11.3289 20.8656 11.3198C20.8706 11.3114 20.8759 11.3032 20.8805 11.2946C20.8855 11.2853 20.8897 11.2757 20.8942 11.2663C20.8984 11.2573 20.9029 11.2484 20.9067 11.2392C20.9105 11.23 20.9136 11.2206 20.9169 11.2113C20.9205 11.2014 20.9243 11.1916 20.9274 11.1814C20.9302 11.1721 20.9322 11.1626 20.9346 11.1532C20.9372 11.1429 20.9401 11.1327 20.9422 11.1222C20.9444 11.1113 20.9456 11.1003 20.9472 11.0894C20.9485 11.0801 20.9503 11.0711 20.9512 11.0617C20.9532 11.0415 20.9543 11.0213 20.9543 11.001C20.9543 11.0007 20.9543 11.0004 20.9543 11.0001C20.9543 10.9998 20.9543 10.9994 20.9543 10.9991C20.9542 10.9789 20.9532 10.9586 20.9512 10.9384C20.9503 10.929 20.9485 10.92 20.9472 10.9108C20.9456 10.8998 20.9444 10.8888 20.9422 10.8779C20.9401 10.8674 20.9372 10.8572 20.9346 10.8469C20.9322 10.8375 20.9302 10.828 20.9274 10.8187C20.9243 10.8086 20.9205 10.7988 20.9169 10.7889C20.9136 10.7795 20.9105 10.7701 20.9067 10.7609C20.9029 10.7517 20.8984 10.7428 20.8941 10.7338C20.8897 10.7244 20.8855 10.7148 20.8805 10.7055C20.8759 10.6969 20.8706 10.6887 20.8656 10.6803C20.8602 10.6712 20.855 10.662 20.8491 10.6531C20.8428 10.6438 20.8359 10.635 20.8292 10.6261C20.8237 10.6187 20.8186 10.6112 20.8127 10.604C20.7996 10.588 20.7858 10.5727 20.7713 10.5581L15.026 4.81285C14.7819 4.56877 14.3862 4.56877 14.1421 4.81285C13.898 5.05692 13.898 5.45264 14.1421 5.69672L18.8204 10.375L0.88388 10.375C0.53871 10.375 0.258878 10.6548 0.258878 11C0.258878 11.3452 0.53871 11.625 0.88388 11.625L18.8204 11.625L14.1421 16.3033C13.8981 16.5474 13.8981 16.9431 14.1421 17.1872C14.3862 17.4312 14.7819 17.4313 15.026 17.1872L20.7713 11.442C20.7858 11.4274 20.7996 11.4121 20.8127 11.3962C20.8186 11.389 20.8237 11.3814 20.8292 11.374C20.8359 11.3651 20.8428 11.3563 20.8491 11.347Z" fill="currentColor"/>
                   </svg>                    
                 </Link>
-                <div className="cs_service_thumb-in position-relative-in background-filled h-100" data-src="/assets/img/service_4.jpeg"></div>
+                <div className="cs_service_thumb-in position-relative-in background-filled h-100" style={{ backgroundImage: "url('/assets/img/service_4.jpeg')" }}></div>
               </div>
             </div>
           </div>
@@ -179,7 +209,7 @@ const Services = () => {
     </div>
     
     
-    <section className="background-filled cs_pt_140 cs_pt_lg_75 cs_pb_135 cs_pb_lg_75" data-src="/assets/img/testimonial_bg.jpeg">
+    <section className="background-filled cs_pt_140 cs_pt_lg_75 cs_pb_135 cs_pb_lg_75" style={{ backgroundImage: "url('/assets/img/testimonial_bg.jpeg')" }}>
       <div className="cs_testimonial_slider cs_gap_30">
         <div className="container">
           <div className="row">
@@ -213,7 +243,7 @@ const Services = () => {
                     <div className="cs_testimonial_in bg-white shadow-sm cs_pl_30 cs_pr_30 cs_pb_27 cs_pt_1 cs_rounded_10">
                       <div className="cs_testimonial_img cs_mb_15"><img src="/assets/img/avatar_1.png" alt="Avatar" className="cs_height_75 cs_width_75 rounded-circle" /></div>
                       <div className="cs_rating text-accent cs_mb_15" data-rating="4.5">
-                        <div className="cs_rating_percentage"></div>
+                        <div className="cs_rating_percentage" style={{ width: '90%' }}></div>
                       </div>
                       <p className="cs_mb_14">I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
                       <h3 className="cs_fs_18 cs_mb_2 cs_lh_base">Darlene Robertson</h3>
@@ -226,7 +256,7 @@ const Services = () => {
                     <div className="cs_testimonial_in bg-white shadow-sm cs_pl_30 cs_pr_30 cs_pb_27 cs_pt_1 cs_rounded_10">
                       <div className="cs_testimonial_img cs_mb_15"><img src="/assets/img/avatar_2.png" alt="Avatar" className="cs_height_75 cs_width_75 rounded-circle" /></div>
                       <div className="cs_rating text-accent cs_mb_15" data-rating="5">
-                        <div className="cs_rating_percentage"></div>
+                        <div className="cs_rating_percentage" style={{ width: '100%' }}></div>
                       </div>
                       <p className="cs_mb_14">I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
                       <h3 className="cs_fs_18 cs_mb_2 cs_lh_base">Carol McCarthy</h3>
@@ -239,7 +269,7 @@ const Services = () => {
                     <div className="cs_testimonial_in bg-white shadow-sm cs_pl_30 cs_pr_30 cs_pb_27 cs_pt_1 cs_rounded_10">
                       <div className="cs_testimonial_img cs_mb_15"><img src="/assets/img/avatar_3.png" alt="Avatar" className="cs_height_75 cs_width_75 rounded-circle" /></div>
                       <div className="cs_rating text-accent cs_mb_15" data-rating="4">
-                        <div className="cs_rating_percentage"></div>
+                        <div className="cs_rating_percentage" style={{ width: '80%' }}></div>
                       </div>
                       <p className="cs_mb_14">I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
                       <h3 className="cs_fs_18 cs_mb_2 cs_lh_base">Peter Johnson</h3>
@@ -252,7 +282,7 @@ const Services = () => {
                     <div className="cs_testimonial_in bg-white shadow-sm cs_pl_30 cs_pr_30 cs_pb_27 cs_pt_1 cs_rounded_10">
                       <div className="cs_testimonial_img cs_mb_15"><img src="/assets/img/avatar_4.png" alt="Avatar" className="cs_height_75 cs_width_75 rounded-circle" /></div>
                       <div className="cs_rating text-accent cs_mb_15" data-rating="5">
-                        <div className="cs_rating_percentage"></div>
+                        <div className="cs_rating_percentage" style={{ width: '100%' }}></div>
                       </div>
                       <p className="cs_mb_14">I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
                       <h3 className="cs_fs_18 cs_mb_2 cs_lh_base">Max Lawrence</h3>
@@ -265,7 +295,7 @@ const Services = () => {
                     <div className="cs_testimonial_in bg-white shadow-sm cs_pl_30 cs_pr_30 cs_pb_27 cs_pt_1 cs_rounded_10">
                       <div className="cs_testimonial_img cs_mb_15"><img src="/assets/img/avatar_1.png" alt="Avatar" className="cs_height_75 cs_width_75 rounded-circle" /></div>
                       <div className="cs_rating text-accent cs_mb_15" data-rating="4.5">
-                        <div className="cs_rating_percentage"></div>
+                        <div className="cs_rating_percentage" style={{ width: '90%' }}></div>
                       </div>
                       <p className="cs_mb_14">I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
                       <h3 className="cs_fs_18 cs_mb_2 cs_lh_base">Darlene Robertson</h3>
@@ -278,7 +308,7 @@ const Services = () => {
                     <div className="cs_testimonial_in bg-white shadow-sm cs_pl_30 cs_pr_30 cs_pb_27 cs_pt_1 cs_rounded_10">
                       <div className="cs_testimonial_img cs_mb_15"><img src="/assets/img/avatar_2.png" alt="Avatar" className="cs_height_75 cs_width_75 rounded-circle" /></div>
                       <div className="cs_rating text-accent cs_mb_15" data-rating="5">
-                        <div className="cs_rating_percentage"></div>
+                        <div className="cs_rating_percentage" style={{ width: '100%' }}></div>
                       </div>
                       <p className="cs_mb_14">I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
                       <h3 className="cs_fs_18 cs_mb_2 cs_lh_base">Carol McCarthy</h3>
@@ -291,7 +321,7 @@ const Services = () => {
                     <div className="cs_testimonial_in bg-white shadow-sm cs_pl_30 cs_pr_30 cs_pb_27 cs_pt_1 cs_rounded_10">
                       <div className="cs_testimonial_img cs_mb_15"><img src="/assets/img/avatar_3.png" alt="Avatar" className="cs_height_75 cs_width_75 rounded-circle" /></div>
                       <div className="cs_rating text-accent cs_mb_15" data-rating="4">
-                        <div className="cs_rating_percentage"></div>
+                        <div className="cs_rating_percentage" style={{ width: '80%' }}></div>
                       </div>
                       <p className="cs_mb_14">I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
                       <h3 className="cs_fs_18 cs_mb_2 cs_lh_base">Peter Johnson</h3>
@@ -304,7 +334,7 @@ const Services = () => {
                     <div className="cs_testimonial_in bg-white shadow-sm cs_pl_30 cs_pr_30 cs_pb_27 cs_pt_1 cs_rounded_10">
                       <div className="cs_testimonial_img cs_mb_15"><img src="/assets/img/avatar_4.png" alt="Avatar" className="cs_height_75 cs_width_75 rounded-circle" /></div>
                       <div className="cs_rating text-accent cs_mb_15" data-rating="5">
-                        <div className="cs_rating_percentage"></div>
+                        <div className="cs_rating_percentage" style={{ width: '100%' }}></div>
                       </div>
                       <p className="cs_mb_14">I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
                       <h3 className="cs_fs_18 cs_mb_2 cs_lh_base">Max Lawrence</h3>
