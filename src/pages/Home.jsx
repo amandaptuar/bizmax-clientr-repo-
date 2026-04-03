@@ -11,7 +11,7 @@ const Home = () => {
       <div className="container position-relative cs_zindex_2">
         <div className="cs_hero_text">
           <h1 className="text-white cs_mb_28 cs_fs_60 cs_fs_lg_46">Strategic Solutions for Business Growth Your Path to Success</h1>
-          <p className="text-white cs_mb_40">Welcome to BizServe, your one-stop destination for comprehensive <br />financial insights and top-notch services.</p>
+          <p className="text-white cs_mb_40">Welcome to Limitless, your one-stop destination for comprehensive <br />financial insights and top-notch services.</p>
           <div className="cs_hero_btn">
             <Link to="/contact" className="cs_btn cs_style_1 cs_fs_16 cs_rounded_5 cs_pl_30 cs_pr_30 cs_pt_10 cs_pb_10 overflow-hidden"><span>Get A Quote</span></Link>
             <Link to="/contact" className="cs_btn cs_style_2 cs_fs_16 cs_rounded_5 cs_pl_30 cs_pr_30 cs_pt_9 cs_pb_9 overflow-hidden"><span>Learn More</span></Link>
@@ -19,10 +19,10 @@ const Home = () => {
         </div>
       </div>
       <div className="cs_social_btns d-flex flex-wrap cs_column_gap_15 cs_row_gap_15 cs_transition_5">
-        <a href="#" className="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i className="fa-brands fa-facebook-f"></i></a>
-        <a href="#" className="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i className="fa-brands fa-twitter"></i></a>
-        <a href="#" className="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i className="fa-brands fa-linkedin-in"></i></a>
-        <a href="#" className="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i className="fa-brands fa-dribbble"></i></a>
+        <Link to="/contact" className="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i className="fa-brands fa-facebook-f"></i></Link>
+        <Link to="/contact" className="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i className="fa-brands fa-twitter"></i></Link>
+        <Link to="/contact" className="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i className="fa-brands fa-linkedin-in"></i></Link>
+        <Link to="/contact" className="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i className="fa-brands fa-dribbble"></i></Link>
       </div>
     </section>
     
@@ -52,7 +52,7 @@ const Home = () => {
               <div className="cs_section_heading cs_style_1 d-flex align-items-center cs_mb_15">
                 <div className="cs_section_heading_in">
                   <h3 className="cs_fs_20 cs_fs_lg_18 text-accent fw-normal cs_lh_base cs_mb_10 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">About Us</h3>
-                  <h2 className="cs_fs_48 cs_fs_lg_36 cs_mb_20">Get Ready for Success with <span className="text-accent">Bizmax</span> Your Path to Growth.</h2>
+                  <h2 className="cs_fs_48 cs_fs_lg_36 cs_mb_20">Get Ready for Success with <img src="/assets/img/limitless-logo.jpeg" alt="Limitless" style={{ maxHeight: '40px', mixBlendMode: 'screen', verticalAlign: 'middle' }} /> Your Path to Growth.</h2>
                   <p className="m-0">Providing legal advice, contract drafting, compliance assistance, intellectual property protection, and other legal support for businesses. Creating visual content, such as logos, brochures, infographics, and other branding materials.</p>
                 </div>
               </div>
@@ -139,11 +139,11 @@ const Home = () => {
                       </defs>
                     </svg>                
                   </div>
-                  <h2 className="cs_lh_base cs_fs_20 cs_fs_lg_18 m-0"><Link to="/services-details" className="inline-block">Human Resources <br />Consulting</Link></h2>
+                  <h2 className="cs_lh_base cs_fs_20 cs_fs_lg_18 m-0"><Link to="/contact" className="inline-block">Human Resources <br />Consulting</Link></h2>
                 </div>
                 <p className="cs_mb_20">Our expert consultants work closely with you to develop tailored financial strategies that align with your short-term and long-term aspirations.</p>
                 <div className="text-primary">
-                  <Link to="/services-details" className="cs_post_btn_2 d-inline-flex justify-content-between align-items-center cs_column_gap_10">
+                  <Link to="/contact" className="cs_post_btn_2 d-inline-flex justify-content-between align-items-center cs_column_gap_10">
                     <span className="cs_post_btn-text">Read More</span>
                     <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M14.9505 5.44725C14.9547 5.44105 14.9583 5.43463 14.9621 5.42827C14.9656 5.42241 14.9692 5.41669 14.9725 5.41066C14.9759 5.40418 14.9789 5.39751 14.982 5.3909C14.985 5.38461 14.9881 5.37844 14.9908 5.372C14.9934 5.36559 14.9956 5.35902 14.9979 5.3525C15.0004 5.34559 15.003 5.33877 15.0052 5.3317C15.0071 5.32519 15.0086 5.31857 15.0102 5.312C15.0121 5.3048 15.0141 5.29767 15.0155 5.29034C15.017 5.28274 15.0179 5.27507 15.019 5.26744C15.02 5.26099 15.0212 5.25466 15.0218 5.24814C15.0232 5.23406 15.0239 5.21991 15.024 5.20576C15.024 5.20554 15.024 5.20532 15.024 5.20512C15.024 5.20492 15.024 5.20469 15.024 5.20448C15.0239 5.19035 15.0232 5.17621 15.0218 5.1621C15.0212 5.15556 15.02 5.14925 15.019 5.1428C15.0179 5.13517 15.017 5.12749 15.0155 5.1199C15.0141 5.11256 15.0121 5.10544 15.0102 5.09824C15.0086 5.09167 15.0071 5.08505 15.0052 5.07854C15.003 5.07149 15.0004 5.06465 14.9979 5.05774C14.9956 5.05122 14.9934 5.04467 14.9908 5.03824C14.9881 5.0318 14.985 5.02562 14.982 5.01934C14.9789 5.01272 14.9759 5.00606 14.9725 4.99958C14.9692 4.99355 14.9656 4.98781 14.9621 4.98197C14.9583 4.97561 14.9547 4.96918 14.9505 4.96299C14.9462 4.9565 14.9414 4.9504 14.9367 4.94415C14.9328 4.93902 14.9293 4.93373 14.9252 4.92872C14.916 4.91758 14.9064 4.90689 14.8962 4.89672L10.887 0.88748C10.7167 0.717156 10.4405 0.717155 10.2702 0.88748C10.0999 1.0578 10.0999 1.33395 10.2702 1.50427L13.5349 4.76894L1.01817 4.76893C0.777297 4.76893 0.582021 4.96421 0.582021 5.20508C0.582021 5.44595 0.777297 5.64123 1.01817 5.64123L13.5349 5.64122L10.2702 8.9059C10.0999 9.07622 10.0999 9.35236 10.2702 9.52269C10.4405 9.69301 10.7167 9.69303 10.887 9.5227L14.8962 5.51349C14.9064 5.50333 14.916 5.49264 14.9251 5.48153C14.9292 5.47652 14.9328 5.47125 14.9367 5.46609C14.9414 5.45984 14.9462 5.45374 14.9505 5.44725Z" fill="currentColor"></path>
@@ -179,7 +179,7 @@ const Home = () => {
                 </div>
                 <p className="cs_mb_20">Our expert consultants work closely with you to develop tailored financial strategies that align with your short-term and long-term aspirations.</p>
                 <div className="text-primary">
-                  <Link to="/services-details" className="cs_post_btn_2 d-inline-flex justify-content-between align-items-center cs_column_gap_10">
+                  <Link to="/contact" className="cs_post_btn_2 d-inline-flex justify-content-between align-items-center cs_column_gap_10">
                     <span className="cs_post_btn-text">Read More</span>
                     <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M14.9505 5.44725C14.9547 5.44105 14.9583 5.43463 14.9621 5.42827C14.9656 5.42241 14.9692 5.41669 14.9725 5.41066C14.9759 5.40418 14.9789 5.39751 14.982 5.3909C14.985 5.38461 14.9881 5.37844 14.9908 5.372C14.9934 5.36559 14.9956 5.35902 14.9979 5.3525C15.0004 5.34559 15.003 5.33877 15.0052 5.3317C15.0071 5.32519 15.0086 5.31857 15.0102 5.312C15.0121 5.3048 15.0141 5.29767 15.0155 5.29034C15.017 5.28274 15.0179 5.27507 15.019 5.26744C15.02 5.26099 15.0212 5.25466 15.0218 5.24814C15.0232 5.23406 15.0239 5.21991 15.024 5.20576C15.024 5.20554 15.024 5.20532 15.024 5.20512C15.024 5.20492 15.024 5.20469 15.024 5.20448C15.0239 5.19035 15.0232 5.17621 15.0218 5.1621C15.0212 5.15556 15.02 5.14925 15.019 5.1428C15.0179 5.13517 15.017 5.12749 15.0155 5.1199C15.0141 5.11256 15.0121 5.10544 15.0102 5.09824C15.0086 5.09167 15.0071 5.08505 15.0052 5.07854C15.003 5.07149 15.0004 5.06465 14.9979 5.05774C14.9956 5.05122 14.9934 5.04467 14.9908 5.03824C14.9881 5.0318 14.985 5.02562 14.982 5.01934C14.9789 5.01272 14.9759 5.00606 14.9725 4.99958C14.9692 4.99355 14.9656 4.98781 14.9621 4.98197C14.9583 4.97561 14.9547 4.96918 14.9505 4.96299C14.9462 4.9565 14.9414 4.9504 14.9367 4.94415C14.9328 4.93902 14.9293 4.93373 14.9252 4.92872C14.916 4.91758 14.9064 4.90689 14.8962 4.89672L10.887 0.88748C10.7167 0.717156 10.4405 0.717155 10.2702 0.88748C10.0999 1.0578 10.0999 1.33395 10.2702 1.50427L13.5349 4.76894L1.01817 4.76893C0.777297 4.76893 0.582021 4.96421 0.582021 5.20508C0.582021 5.44595 0.777297 5.64123 1.01817 5.64123L13.5349 5.64122L10.2702 8.9059C10.0999 9.07622 10.0999 9.35236 10.2702 9.52269C10.4405 9.69301 10.7167 9.69303 10.887 9.5227L14.8962 5.51349C14.9064 5.50333 14.916 5.49264 14.9251 5.48153C14.9292 5.47652 14.9328 5.47125 14.9367 5.46609C14.9414 5.45984 14.9462 5.45374 14.9505 5.44725Z" fill="currentColor"></path>
@@ -215,7 +215,7 @@ const Home = () => {
                 </div>
                 <p className="cs_mb_20">Our expert consultants work closely with you to develop tailored financial strategies that align with your short-term and long-term aspirations.</p>
                 <div className="text-primary">
-                  <Link to="/services-details" className="cs_post_btn_2 d-inline-flex justify-content-between align-items-center cs_column_gap_10">
+                  <Link to="/contact" className="cs_post_btn_2 d-inline-flex justify-content-between align-items-center cs_column_gap_10">
                     <span className="cs_post_btn-text">Read More</span>
                     <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M14.9505 5.44725C14.9547 5.44105 14.9583 5.43463 14.9621 5.42827C14.9656 5.42241 14.9692 5.41669 14.9725 5.41066C14.9759 5.40418 14.9789 5.39751 14.982 5.3909C14.985 5.38461 14.9881 5.37844 14.9908 5.372C14.9934 5.36559 14.9956 5.35902 14.9979 5.3525C15.0004 5.34559 15.003 5.33877 15.0052 5.3317C15.0071 5.32519 15.0086 5.31857 15.0102 5.312C15.0121 5.3048 15.0141 5.29767 15.0155 5.29034C15.017 5.28274 15.0179 5.27507 15.019 5.26744C15.02 5.26099 15.0212 5.25466 15.0218 5.24814C15.0232 5.23406 15.0239 5.21991 15.024 5.20576C15.024 5.20554 15.024 5.20532 15.024 5.20512C15.024 5.20492 15.024 5.20469 15.024 5.20448C15.0239 5.19035 15.0232 5.17621 15.0218 5.1621C15.0212 5.15556 15.02 5.14925 15.019 5.1428C15.0179 5.13517 15.017 5.12749 15.0155 5.1199C15.0141 5.11256 15.0121 5.10544 15.0102 5.09824C15.0086 5.09167 15.0071 5.08505 15.0052 5.07854C15.003 5.07149 15.0004 5.06465 14.9979 5.05774C14.9956 5.05122 14.9934 5.04467 14.9908 5.03824C14.9881 5.0318 14.985 5.02562 14.982 5.01934C14.9789 5.01272 14.9759 5.00606 14.9725 4.99958C14.9692 4.99355 14.9656 4.98781 14.9621 4.98197C14.9583 4.97561 14.9547 4.96918 14.9505 4.96299C14.9462 4.9565 14.9414 4.9504 14.9367 4.94415C14.9328 4.93902 14.9293 4.93373 14.9252 4.92872C14.916 4.91758 14.9064 4.90689 14.8962 4.89672L10.887 0.88748C10.7167 0.717156 10.4405 0.717155 10.2702 0.88748C10.0999 1.0578 10.0999 1.33395 10.2702 1.50427L13.5349 4.76894L1.01817 4.76893C0.777297 4.76893 0.582021 4.96421 0.582021 5.20508C0.582021 5.44595 0.777297 5.64123 1.01817 5.64123L13.5349 5.64122L10.2702 8.9059C10.0999 9.07622 10.0999 9.35236 10.2702 9.52269C10.4405 9.69301 10.7167 9.69303 10.887 9.5227L14.8962 5.51349C14.9064 5.50333 14.916 5.49264 14.9251 5.48153C14.9292 5.47652 14.9328 5.47125 14.9367 5.46609C14.9414 5.45984 14.9462 5.45374 14.9505 5.44725Z" fill="currentColor"></path>
@@ -250,7 +250,7 @@ const Home = () => {
                 </div>
                 <p className="cs_mb_20">Our expert consultants work closely with you to develop tailored financial strategies that align with your short-term and long-term aspirations.</p>
                 <div className="text-primary">
-                  <Link to="/services-details" className="cs_post_btn_2 d-inline-flex justify-content-between align-items-center cs_column_gap_10">
+                  <Link to="/contact" className="cs_post_btn_2 d-inline-flex justify-content-between align-items-center cs_column_gap_10">
                     <span className="cs_post_btn-text">Read More</span>
                     <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M14.9505 5.44725C14.9547 5.44105 14.9583 5.43463 14.9621 5.42827C14.9656 5.42241 14.9692 5.41669 14.9725 5.41066C14.9759 5.40418 14.9789 5.39751 14.982 5.3909C14.985 5.38461 14.9881 5.37844 14.9908 5.372C14.9934 5.36559 14.9956 5.35902 14.9979 5.3525C15.0004 5.34559 15.003 5.33877 15.0052 5.3317C15.0071 5.32519 15.0086 5.31857 15.0102 5.312C15.0121 5.3048 15.0141 5.29767 15.0155 5.29034C15.017 5.28274 15.0179 5.27507 15.019 5.26744C15.02 5.26099 15.0212 5.25466 15.0218 5.24814C15.0232 5.23406 15.0239 5.21991 15.024 5.20576C15.024 5.20554 15.024 5.20532 15.024 5.20512C15.024 5.20492 15.024 5.20469 15.024 5.20448C15.0239 5.19035 15.0232 5.17621 15.0218 5.1621C15.0212 5.15556 15.02 5.14925 15.019 5.1428C15.0179 5.13517 15.017 5.12749 15.0155 5.1199C15.0141 5.11256 15.0121 5.10544 15.0102 5.09824C15.0086 5.09167 15.0071 5.08505 15.0052 5.07854C15.003 5.07149 15.0004 5.06465 14.9979 5.05774C14.9956 5.05122 14.9934 5.04467 14.9908 5.03824C14.9881 5.0318 14.985 5.02562 14.982 5.01934C14.9789 5.01272 14.9759 5.00606 14.9725 4.99958C14.9692 4.99355 14.9656 4.98781 14.9621 4.98197C14.9583 4.97561 14.9547 4.96918 14.9505 4.96299C14.9462 4.9565 14.9414 4.9504 14.9367 4.94415C14.9328 4.93902 14.9293 4.93373 14.9252 4.92872C14.916 4.91758 14.9064 4.90689 14.8962 4.89672L10.887 0.88748C10.7167 0.717156 10.4405 0.717155 10.2702 0.88748C10.0999 1.0578 10.0999 1.33395 10.2702 1.50427L13.5349 4.76894L1.01817 4.76893C0.777297 4.76893 0.582021 4.96421 0.582021 5.20508C0.582021 5.44595 0.777297 5.64123 1.01817 5.64123L13.5349 5.64122L10.2702 8.9059C10.0999 9.07622 10.0999 9.35236 10.2702 9.52269C10.4405 9.69301 10.7167 9.69303 10.887 9.5227L14.8962 5.51349C14.9064 5.50333 14.916 5.49264 14.9251 5.48153C14.9292 5.47652 14.9328 5.47125 14.9367 5.46609C14.9414 5.45984 14.9462 5.45374 14.9505 5.44725Z" fill="currentColor"></path>
@@ -283,7 +283,7 @@ const Home = () => {
                 </div>
                 <p className="cs_mb_20">Our expert consultants work closely with you to develop tailored financial strategies that align with your short-term and long-term aspirations.</p>
                 <div className="text-primary">
-                  <Link to="/services-details" className="cs_post_btn_2 d-inline-flex justify-content-between align-items-center cs_column_gap_10">
+                  <Link to="/contact" className="cs_post_btn_2 d-inline-flex justify-content-between align-items-center cs_column_gap_10">
                     <span className="cs_post_btn-text">Read More</span>
                     <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M14.9505 5.44725C14.9547 5.44105 14.9583 5.43463 14.9621 5.42827C14.9656 5.42241 14.9692 5.41669 14.9725 5.41066C14.9759 5.40418 14.9789 5.39751 14.982 5.3909C14.985 5.38461 14.9881 5.37844 14.9908 5.372C14.9934 5.36559 14.9956 5.35902 14.9979 5.3525C15.0004 5.34559 15.003 5.33877 15.0052 5.3317C15.0071 5.32519 15.0086 5.31857 15.0102 5.312C15.0121 5.3048 15.0141 5.29767 15.0155 5.29034C15.017 5.28274 15.0179 5.27507 15.019 5.26744C15.02 5.26099 15.0212 5.25466 15.0218 5.24814C15.0232 5.23406 15.0239 5.21991 15.024 5.20576C15.024 5.20554 15.024 5.20532 15.024 5.20512C15.024 5.20492 15.024 5.20469 15.024 5.20448C15.0239 5.19035 15.0232 5.17621 15.0218 5.1621C15.0212 5.15556 15.02 5.14925 15.019 5.1428C15.0179 5.13517 15.017 5.12749 15.0155 5.1199C15.0141 5.11256 15.0121 5.10544 15.0102 5.09824C15.0086 5.09167 15.0071 5.08505 15.0052 5.07854C15.003 5.07149 15.0004 5.06465 14.9979 5.05774C14.9956 5.05122 14.9934 5.04467 14.9908 5.03824C14.9881 5.0318 14.985 5.02562 14.982 5.01934C14.9789 5.01272 14.9759 5.00606 14.9725 4.99958C14.9692 4.99355 14.9656 4.98781 14.9621 4.98197C14.9583 4.97561 14.9547 4.96918 14.9505 4.96299C14.9462 4.9565 14.9414 4.9504 14.9367 4.94415C14.9328 4.93902 14.9293 4.93373 14.9252 4.92872C14.916 4.91758 14.9064 4.90689 14.8962 4.89672L10.887 0.88748C10.7167 0.717156 10.4405 0.717155 10.2702 0.88748C10.0999 1.0578 10.0999 1.33395 10.2702 1.50427L13.5349 4.76894L1.01817 4.76893C0.777297 4.76893 0.582021 4.96421 0.582021 5.20508C0.582021 5.44595 0.777297 5.64123 1.01817 5.64123L13.5349 5.64122L10.2702 8.9059C10.0999 9.07622 10.0999 9.35236 10.2702 9.52269C10.4405 9.69301 10.7167 9.69303 10.887 9.5227L14.8962 5.51349C14.9064 5.50333 14.916 5.49264 14.9251 5.48153C14.9292 5.47652 14.9328 5.47125 14.9367 5.46609C14.9414 5.45984 14.9462 5.45374 14.9505 5.44725Z" fill="currentColor"></path>
@@ -315,11 +315,11 @@ const Home = () => {
                       </defs>
                     </svg>                
                   </div>
-                  <h2 className="cs_lh_base cs_fs_20 cs_fs_lg_18 m-0"><Link to="/services-details" className="inline-block">Strategy <br />Consulting</Link></h2>
+                  <h2 className="cs_lh_base cs_fs_20 cs_fs_lg_18 m-0"><Link to="/contact" className="inline-block">Strategy <br />Consulting</Link></h2>
                 </div>
                 <p className="cs_mb_20">Our expert consultants work closely with you to develop tailored financial strategies that align with your short-term and long-term aspirations.</p>
                 <div className="text-primary">
-                  <Link to="/services-details" className="cs_post_btn_2 d-inline-flex justify-content-between align-items-center cs_column_gap_10">
+                  <Link to="/contact" className="cs_post_btn_2 d-inline-flex justify-content-between align-items-center cs_column_gap_10">
                     <span className="cs_post_btn-text">Read More</span>
                     <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M14.9505 5.44725C14.9547 5.44105 14.9583 5.43463 14.9621 5.42827C14.9656 5.42241 14.9692 5.41669 14.9725 5.41066C14.9759 5.40418 14.9789 5.39751 14.982 5.3909C14.985 5.38461 14.9881 5.37844 14.9908 5.372C14.9934 5.36559 14.9956 5.35902 14.9979 5.3525C15.0004 5.34559 15.003 5.33877 15.0052 5.3317C15.0071 5.32519 15.0086 5.31857 15.0102 5.312C15.0121 5.3048 15.0141 5.29767 15.0155 5.29034C15.017 5.28274 15.0179 5.27507 15.019 5.26744C15.02 5.26099 15.0212 5.25466 15.0218 5.24814C15.0232 5.23406 15.0239 5.21991 15.024 5.20576C15.024 5.20554 15.024 5.20532 15.024 5.20512C15.024 5.20492 15.024 5.20469 15.024 5.20448C15.0239 5.19035 15.0232 5.17621 15.0218 5.1621C15.0212 5.15556 15.02 5.14925 15.019 5.1428C15.0179 5.13517 15.017 5.12749 15.0155 5.1199C15.0141 5.11256 15.0121 5.10544 15.0102 5.09824C15.0086 5.09167 15.0071 5.08505 15.0052 5.07854C15.003 5.07149 15.0004 5.06465 14.9979 5.05774C14.9956 5.05122 14.9934 5.04467 14.9908 5.03824C14.9881 5.0318 14.985 5.02562 14.982 5.01934C14.9789 5.01272 14.9759 5.00606 14.9725 4.99958C14.9692 4.99355 14.9656 4.98781 14.9621 4.98197C14.9583 4.97561 14.9547 4.96918 14.9505 4.96299C14.9462 4.9565 14.9414 4.9504 14.9367 4.94415C14.9328 4.93902 14.9293 4.93373 14.9252 4.92872C14.916 4.91758 14.9064 4.90689 14.8962 4.89672L10.887 0.88748C10.7167 0.717156 10.4405 0.717155 10.2702 0.88748C10.0999 1.0578 10.0999 1.33395 10.2702 1.50427L13.5349 4.76894L1.01817 4.76893C0.777297 4.76893 0.582021 4.96421 0.582021 5.20508C0.582021 5.44595 0.777297 5.64123 1.01817 5.64123L13.5349 5.64122L10.2702 8.9059C10.0999 9.07622 10.0999 9.35236 10.2702 9.52269C10.4405 9.69301 10.7167 9.69303 10.887 9.5227L14.8962 5.51349C14.9064 5.50333 14.916 5.49264 14.9251 5.48153C14.9292 5.47652 14.9328 5.47125 14.9367 5.46609C14.9414 5.45984 14.9462 5.45374 14.9505 5.44725Z" fill="currentColor"></path>
@@ -355,7 +355,7 @@ const Home = () => {
                 </div>
                 <p className="cs_mb_20">Our expert consultants work closely with you to develop tailored financial strategies that align with your short-term and long-term aspirations.</p>
                 <div className="text-primary">
-                  <Link to="/services-details" className="cs_post_btn_2 d-inline-flex justify-content-between align-items-center cs_column_gap_10">
+                  <Link to="/contact" className="cs_post_btn_2 d-inline-flex justify-content-between align-items-center cs_column_gap_10">
                     <span className="cs_post_btn-text">Read More</span>
                     <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M14.9505 5.44725C14.9547 5.44105 14.9583 5.43463 14.9621 5.42827C14.9656 5.42241 14.9692 5.41669 14.9725 5.41066C14.9759 5.40418 14.9789 5.39751 14.982 5.3909C14.985 5.38461 14.9881 5.37844 14.9908 5.372C14.9934 5.36559 14.9956 5.35902 14.9979 5.3525C15.0004 5.34559 15.003 5.33877 15.0052 5.3317C15.0071 5.32519 15.0086 5.31857 15.0102 5.312C15.0121 5.3048 15.0141 5.29767 15.0155 5.29034C15.017 5.28274 15.0179 5.27507 15.019 5.26744C15.02 5.26099 15.0212 5.25466 15.0218 5.24814C15.0232 5.23406 15.0239 5.21991 15.024 5.20576C15.024 5.20554 15.024 5.20532 15.024 5.20512C15.024 5.20492 15.024 5.20469 15.024 5.20448C15.0239 5.19035 15.0232 5.17621 15.0218 5.1621C15.0212 5.15556 15.02 5.14925 15.019 5.1428C15.0179 5.13517 15.017 5.12749 15.0155 5.1199C15.0141 5.11256 15.0121 5.10544 15.0102 5.09824C15.0086 5.09167 15.0071 5.08505 15.0052 5.07854C15.003 5.07149 15.0004 5.06465 14.9979 5.05774C14.9956 5.05122 14.9934 5.04467 14.9908 5.03824C14.9881 5.0318 14.985 5.02562 14.982 5.01934C14.9789 5.01272 14.9759 5.00606 14.9725 4.99958C14.9692 4.99355 14.9656 4.98781 14.9621 4.98197C14.9583 4.97561 14.9547 4.96918 14.9505 4.96299C14.9462 4.9565 14.9414 4.9504 14.9367 4.94415C14.9328 4.93902 14.9293 4.93373 14.9252 4.92872C14.916 4.91758 14.9064 4.90689 14.8962 4.89672L10.887 0.88748C10.7167 0.717156 10.4405 0.717155 10.2702 0.88748C10.0999 1.0578 10.0999 1.33395 10.2702 1.50427L13.5349 4.76894L1.01817 4.76893C0.777297 4.76893 0.582021 4.96421 0.582021 5.20508C0.582021 5.44595 0.777297 5.64123 1.01817 5.64123L13.5349 5.64122L10.2702 8.9059C10.0999 9.07622 10.0999 9.35236 10.2702 9.52269C10.4405 9.69301 10.7167 9.69303 10.887 9.5227L14.8962 5.51349C14.9064 5.50333 14.916 5.49264 14.9251 5.48153C14.9292 5.47652 14.9328 5.47125 14.9367 5.46609C14.9414 5.45984 14.9462 5.45374 14.9505 5.44725Z" fill="currentColor"></path>
@@ -390,7 +390,7 @@ const Home = () => {
                 </div>
                 <p className="cs_mb_20">Our expert consultants work closely with you to develop tailored financial strategies that align with your short-term and long-term aspirations.</p>
                 <div className="text-primary">
-                  <Link to="/services-details" className="cs_post_btn_2 d-inline-flex justify-content-between align-items-center cs_column_gap_10">
+                  <Link to="/contact" className="cs_post_btn_2 d-inline-flex justify-content-between align-items-center cs_column_gap_10">
                     <span className="cs_post_btn-text">Read More</span>
                     <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M14.9505 5.44725C14.9547 5.44105 14.9583 5.43463 14.9621 5.42827C14.9656 5.42241 14.9692 5.41669 14.9725 5.41066C14.9759 5.40418 14.9789 5.39751 14.982 5.3909C14.985 5.38461 14.9881 5.37844 14.9908 5.372C14.9934 5.36559 14.9956 5.35902 14.9979 5.3525C15.0004 5.34559 15.003 5.33877 15.0052 5.3317C15.0071 5.32519 15.0086 5.31857 15.0102 5.312C15.0121 5.3048 15.0141 5.29767 15.0155 5.29034C15.017 5.28274 15.0179 5.27507 15.019 5.26744C15.02 5.26099 15.0212 5.25466 15.0218 5.24814C15.0232 5.23406 15.0239 5.21991 15.024 5.20576C15.024 5.20554 15.024 5.20532 15.024 5.20512C15.024 5.20492 15.024 5.20469 15.024 5.20448C15.0239 5.19035 15.0232 5.17621 15.0218 5.1621C15.0212 5.15556 15.02 5.14925 15.019 5.1428C15.0179 5.13517 15.017 5.12749 15.0155 5.1199C15.0141 5.11256 15.0121 5.10544 15.0102 5.09824C15.0086 5.09167 15.0071 5.08505 15.0052 5.07854C15.003 5.07149 15.0004 5.06465 14.9979 5.05774C14.9956 5.05122 14.9934 5.04467 14.9908 5.03824C14.9881 5.0318 14.985 5.02562 14.982 5.01934C14.9789 5.01272 14.9759 5.00606 14.9725 4.99958C14.9692 4.99355 14.9656 4.98781 14.9621 4.98197C14.9583 4.97561 14.9547 4.96918 14.9505 4.96299C14.9462 4.9565 14.9414 4.9504 14.9367 4.94415C14.9328 4.93902 14.9293 4.93373 14.9252 4.92872C14.916 4.91758 14.9064 4.90689 14.8962 4.89672L10.887 0.88748C10.7167 0.717156 10.4405 0.717155 10.2702 0.88748C10.0999 1.0578 10.0999 1.33395 10.2702 1.50427L13.5349 4.76894L1.01817 4.76893C0.777297 4.76893 0.582021 4.96421 0.582021 5.20508C0.582021 5.44595 0.777297 5.64123 1.01817 5.64123L13.5349 5.64122L10.2702 8.9059C10.0999 9.07622 10.0999 9.35236 10.2702 9.52269C10.4405 9.69301 10.7167 9.69303 10.887 9.5227L14.8962 5.51349C14.9064 5.50333 14.916 5.49264 14.9251 5.48153C14.9292 5.47652 14.9328 5.47125 14.9367 5.46609C14.9414 5.45984 14.9462 5.45374 14.9505 5.44725Z" fill="currentColor"></path>
@@ -462,9 +462,9 @@ const Home = () => {
           <div className="cs_grid_sizer"></div>
           <div className="cs_isotop_item website">
             <div className="cs_portfolio cs_style_1 cs_size_1 position-relative overflow-hidden">
-              <Link to="/project-details" className="cs_portfolio_overlay cs_transition_4 position-absolute h-100 w-100 start-0 top-0 cs_zindex_1 d-block"></Link>
+              <Link to="/contact" className="cs_portfolio_overlay cs_transition_4 position-absolute h-100 w-100 start-0 top-0 cs_zindex_1 d-block"></Link>
               <div className="cs_portfolio_thumb d-block h-100 w-100 background-filled cs_transition_6" data-src="/assets/img/project_1.jpeg"></div>
-              <h3 className="cs_portfolio_title m-0 cs_fs_26 text-white cs_pl_50 cs_pb_45 cs_mr_50 position-relative cs_zindex_4 position-absolute start-0 bottom-0 w-100 cs_transition_4"><Link to="/project-details">Marketing Webdesign</Link></h3>
+              <h3 className="cs_portfolio_title m-0 cs_fs_26 text-white cs_pl_50 cs_pb_45 cs_mr_50 position-relative cs_zindex_4 position-absolute start-0 bottom-0 w-100 cs_transition_4"><Link to="/contact">Marketing Webdesign</Link></h3>
             </div>
           </div>
           <div className="cs_isotop_item marketing">
@@ -526,7 +526,7 @@ const Home = () => {
                   <div className="cs_rating text-accent cs_mb_15" data-rating="4.5">
                     <div className="cs_rating_percentage"></div>
                   </div>
-                  <p className="cs_mb_14">I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
+                  <p className="cs_mb_14">I've been using Limitless for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
                   <h3 className="cs_fs_18 cs_mb_2 cs_lh_base">Darlene Robertson</h3>
                   <p className="m-0 cs_fs_14 cs_lh_base">Web design</p>
                 </div>
@@ -539,7 +539,7 @@ const Home = () => {
                   <div className="cs_rating text-accent cs_mb_15" data-rating="5">
                     <div className="cs_rating_percentage"></div>
                   </div>
-                  <p className="cs_mb_14">I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
+                  <p className="cs_mb_14">I've been using Limitless for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
                   <h3 className="cs_fs_18 cs_mb_2 cs_lh_base">Carol McCarthy</h3>
                   <p className="m-0 cs_fs_14 cs_lh_base">Product manager</p>
                 </div>
@@ -552,7 +552,7 @@ const Home = () => {
                   <div className="cs_rating text-accent cs_mb_15" data-rating="4">
                     <div className="cs_rating_percentage"></div>
                   </div>
-                  <p className="cs_mb_14">I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
+                  <p className="cs_mb_14">I've been using Limitless for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
                   <h3 className="cs_fs_18 cs_mb_2 cs_lh_base">Peter Johnson</h3>
                   <p className="m-0 cs_fs_14 cs_lh_base">Web developer</p>
                 </div>
@@ -565,7 +565,7 @@ const Home = () => {
                   <div className="cs_rating text-accent cs_mb_15" data-rating="5">
                     <div className="cs_rating_percentage"></div>
                   </div>
-                  <p className="cs_mb_14">I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
+                  <p className="cs_mb_14">I've been using Limitless for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
                   <h3 className="cs_fs_18 cs_mb_2 cs_lh_base">Max Lawrence</h3>
                   <p className="m-0 cs_fs_14 cs_lh_base">Digital marketing</p>
                 </div>
@@ -578,7 +578,7 @@ const Home = () => {
                   <div className="cs_rating text-accent cs_mb_15" data-rating="4.5">
                     <div className="cs_rating_percentage"></div>
                   </div>
-                  <p className="cs_mb_14">I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
+                  <p className="cs_mb_14">I've been using Limitless for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
                   <h3 className="cs_fs_18 cs_mb_2 cs_lh_base">Darlene Robertson</h3>
                   <p className="m-0 cs_fs_14 cs_lh_base">Web design</p>
                 </div>
@@ -591,7 +591,7 @@ const Home = () => {
                   <div className="cs_rating text-accent cs_mb_15" data-rating="5">
                     <div className="cs_rating_percentage"></div>
                   </div>
-                  <p className="cs_mb_14">I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
+                  <p className="cs_mb_14">I've been using Limitless for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
                   <h3 className="cs_fs_18 cs_mb_2 cs_lh_base">Carol McCarthy</h3>
                   <p className="m-0 cs_fs_14 cs_lh_base">Product manager</p>
                 </div>
@@ -604,7 +604,7 @@ const Home = () => {
                   <div className="cs_rating text-accent cs_mb_15" data-rating="4">
                     <div className="cs_rating_percentage"></div>
                   </div>
-                  <p className="cs_mb_14">I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
+                  <p className="cs_mb_14">I've been using Limitless for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
                   <h3 className="cs_fs_18 cs_mb_2 cs_lh_base">Peter Johnson</h3>
                   <p className="m-0 cs_fs_14 cs_lh_base">Web developer</p>
                 </div>
@@ -617,7 +617,7 @@ const Home = () => {
                   <div className="cs_rating text-accent cs_mb_15" data-rating="5">
                     <div className="cs_rating_percentage"></div>
                   </div>
-                  <p className="cs_mb_14">I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
+                  <p className="cs_mb_14">I've been using Limitless for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
                   <h3 className="cs_fs_18 cs_mb_2 cs_lh_base">Max Lawrence</h3>
                   <p className="m-0 cs_fs_14 cs_lh_base">Digital marketing</p>
                 </div>
@@ -658,9 +658,9 @@ const Home = () => {
               <div className="cs_team_member position-relative">
                 <img className="w-100" src="/assets/img/team_member_1.jpeg" alt="Member" />
                 <div className="cs_social_btns d-flex flex-wrap cs_column_gap_15 cs_row_gap_15 cs_transition_5 cs_fs_20 cs_fs_lg_18 position-absolute">
-                  <a href="#" className="d-flex align-items-center justify-content-center cs_height_45 cs_width_45 border-0 text-white rounded-circle"><i className="fa-brands fa-facebook-f"></i></a>
-                  <a href="#" className="d-flex align-items-center justify-content-center cs_height_45 cs_width_45 border-0 text-white rounded-circle"><i className="fa-brands fa-twitter"></i></a>
-                  <a href="#" className="d-flex align-items-center justify-content-center cs_height_45 cs_width_45 border-0 text-white rounded-circle"><i className="fa-brands fa-dribbble"></i></a>
+                  <Link to="/contact" className="d-flex align-items-center justify-content-center cs_height_45 cs_width_45 border-0 text-white rounded-circle"><i className="fa-brands fa-facebook-f"></i></Link>
+                  <Link to="/contact" className="d-flex align-items-center justify-content-center cs_height_45 cs_width_45 border-0 text-white rounded-circle"><i className="fa-brands fa-twitter"></i></Link>
+                  <Link to="/contact" className="d-flex align-items-center justify-content-center cs_height_45 cs_width_45 border-0 text-white rounded-circle"><i className="fa-brands fa-dribbble"></i></Link>
                 </div>
               </div>
               <div className="cs_team_info cs_pt_127 cs_pl_15 cs_pr_15 cs_pb_25 cs_transition_4">
@@ -731,7 +731,7 @@ const Home = () => {
               <div className="cs_section_heading cs_style_1 cs_mb_50">
                 <div className="cs_section_heading_in">
                   <h3 className="cs_fs_20 text-accent fw-normal cs_lh_base wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">Company’s Statistic</h3>
-                  <h2 className="cs_fs_48 cs_fs_lg_36 cs_mb_20">Achievements of Our Bizmax Finance</h2>
+                  <h2 className="cs_fs_48 cs_fs_lg_36 cs_mb_20">Achievements of Our Limitless Finance</h2>
                   <p className="m-0">Providing legal advice, contract drafting, compliance assistance, intellectual property protection, and other legal support.</p>
                 </div>
               </div>

@@ -19,7 +19,7 @@ const Header = () => {
           <div className="cs_main_header_in">
             <div className="cs_main_header_left">
               <Link className="cs_site_branding" to="/">
-                <img src="/assets/img/logo.svg" alt="Logo" />
+                <img src="/assets/img/limitless-logo.jpeg" alt="Logo" style={{ maxHeight: '90px', mixBlendMode: 'screen' }} />
               </Link>
               <div className="cs_nav cs_primary_font fw-medium">
                 <ul className="cs_nav_list fw-medium text-uppercase">

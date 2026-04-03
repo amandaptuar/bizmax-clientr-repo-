@@ -88,7 +88,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-accent cs_mb_7">Send Email</p>
-                    <h2 className="m-0 fw-medium cs_fs_22 cs_fs_lg_18 cs_lh_base">bizmax@laralink.com</h2>
+                    <h2 className="m-0 fw-medium cs_fs_22 cs_fs_lg_18 cs_lh_base">info@limitless.com</h2>
                   </div>
                 </div>
                 <div className="d-flex align-items-center">

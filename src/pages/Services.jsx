@@ -2,36 +2,6 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Services = () => {
-  useEffect(() => {
-    if (window.jQuery && window.jQuery.fn.slick) {
-      window.jQuery('.cs_testimonial_slider').each(function () {
-        var $slickActive = window.jQuery(this).find('.cs_slider_activate');
-        if (!$slickActive.hasClass('slick-initialized')) {
-          $slickActive.slick({
-            slidesToShow: 4,
-            infinite: true,
-            slidesToScroll: 1,
-            variableWidth: true,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            prevArrow: window.jQuery(this).find('.cs_slider_prev'),
-            nextArrow: window.jQuery(this).find('.cs_slider_next'),
-          });
-        }
-      });
-    }
-
-    return () => {
-      if (window.jQuery && window.jQuery.fn.slick) {
-        window.jQuery('.cs_testimonial_slider .cs_slider_activate').each(function () {
-          if (window.jQuery(this).hasClass('slick-initialized')) {
-            window.jQuery(this).slick('unslick');
-          }
-        });
-      }
-    };
-  }, []);
-
   return (
     <>
 
@@ -245,7 +215,7 @@ const Services = () => {
                       <div className="cs_rating text-accent cs_mb_15" data-rating="4.5">
                         <div className="cs_rating_percentage" style={{ width: '90%' }}></div>
                       </div>
-                      <p className="cs_mb_14">I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
+                      <p className="cs_mb_14">I've been using Limitless for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
                       <h3 className="cs_fs_18 cs_mb_2 cs_lh_base">Darlene Robertson</h3>
                       <p className="m-0 cs_fs_14 cs_lh_base">Web design</p>
                     </div>
@@ -258,7 +228,7 @@ const Services = () => {
                       <div className="cs_rating text-accent cs_mb_15" data-rating="5">
                         <div className="cs_rating_percentage" style={{ width: '100%' }}></div>
                       </div>
-                      <p className="cs_mb_14">I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
+                      <p className="cs_mb_14">I've been using Limitless for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
                       <h3 className="cs_fs_18 cs_mb_2 cs_lh_base">Carol McCarthy</h3>
                       <p className="m-0 cs_fs_14 cs_lh_base">Product manager</p>
                     </div>
@@ -271,7 +241,7 @@ const Services = () => {
                       <div className="cs_rating text-accent cs_mb_15" data-rating="4">
                         <div className="cs_rating_percentage" style={{ width: '80%' }}></div>
                       </div>
-                      <p className="cs_mb_14">I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
+                      <p className="cs_mb_14">I've been using Limitless for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
                       <h3 className="cs_fs_18 cs_mb_2 cs_lh_base">Peter Johnson</h3>
                       <p className="m-0 cs_fs_14 cs_lh_base">Web developer</p>
                     </div>
@@ -284,7 +254,7 @@ const Services = () => {
                       <div className="cs_rating text-accent cs_mb_15" data-rating="5">
                         <div className="cs_rating_percentage" style={{ width: '100%' }}></div>
                       </div>
-                      <p className="cs_mb_14">I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
+                      <p className="cs_mb_14">I've been using Limitless for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
                       <h3 className="cs_fs_18 cs_mb_2 cs_lh_base">Max Lawrence</h3>
                       <p className="m-0 cs_fs_14 cs_lh_base">Digital marketing</p>
                     </div>
@@ -297,7 +267,7 @@ const Services = () => {
                       <div className="cs_rating text-accent cs_mb_15" data-rating="4.5">
                         <div className="cs_rating_percentage" style={{ width: '90%' }}></div>
                       </div>
-                      <p className="cs_mb_14">I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
+                      <p className="cs_mb_14">I've been using Limitless for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
                       <h3 className="cs_fs_18 cs_mb_2 cs_lh_base">Darlene Robertson</h3>
                       <p className="m-0 cs_fs_14 cs_lh_base">Web design</p>
                     </div>
@@ -310,7 +280,7 @@ const Services = () => {
                       <div className="cs_rating text-accent cs_mb_15" data-rating="5">
                         <div className="cs_rating_percentage" style={{ width: '100%' }}></div>
                       </div>
-                      <p className="cs_mb_14">I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
+                      <p className="cs_mb_14">I've been using Limitless for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
                       <h3 className="cs_fs_18 cs_mb_2 cs_lh_base">Carol McCarthy</h3>
                       <p className="m-0 cs_fs_14 cs_lh_base">Product manager</p>
                     </div>
@@ -323,7 +293,7 @@ const Services = () => {
                       <div className="cs_rating text-accent cs_mb_15" data-rating="4">
                         <div className="cs_rating_percentage" style={{ width: '80%' }}></div>
                       </div>
-                      <p className="cs_mb_14">I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
+                      <p className="cs_mb_14">I've been using Limitless for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
                       <h3 className="cs_fs_18 cs_mb_2 cs_lh_base">Peter Johnson</h3>
                       <p className="m-0 cs_fs_14 cs_lh_base">Web developer</p>
                     </div>
@@ -336,7 +306,7 @@ const Services = () => {
                       <div className="cs_rating text-accent cs_mb_15" data-rating="5">
                         <div className="cs_rating_percentage" style={{ width: '100%' }}></div>
                       </div>
-                      <p className="cs_mb_14">I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
+                      <p className="cs_mb_14">I've been using Limitless for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
                       <h3 className="cs_fs_18 cs_mb_2 cs_lh_base">Max Lawrence</h3>
                       <p className="m-0 cs_fs_14 cs_lh_base">Digital marketing</p>
                     </div>

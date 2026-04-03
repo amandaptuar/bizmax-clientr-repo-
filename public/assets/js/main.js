@@ -36,14 +36,7 @@
     return $(selector).length > 0;
   };
 
-  $(window).on('load', function () {
-    $(window).trigger('scroll');
-    $(window).trigger('resize');
-    preloader();
-    isotopInit();
-  });
-
-  $(function () {
+  window.bizmax_init_scripts = function () {
     $(window).trigger('resize');
     mainNav();
     stickyHeader();
@@ -66,6 +59,17 @@
     if ($.exists('.player')) {
       $('.player').YTPlayer();
     }
+  };
+
+  $(window).on('load', function () {
+    $(window).trigger('scroll');
+    $(window).trigger('resize');
+    preloader();
+    isotopInit();
+  });
+
+  $(function () {
+    window.bizmax_init_scripts();
   });
 
   $(window).on('scroll', function () {
@@ -84,11 +88,15 @@
     2. Mobile Menu
   --------------------------------------------------------------*/
   function mainNav() {
-    $('.cs_nav').append('<span class="cs-munu_toggle"><span></span></span>');
-    $('.menu-item-has-children').append(
-      '<span class="cs-munu_dropdown_toggle"></span>',
-    );
-    $('.cs-munu_toggle').on('click', function () {
+    if (!$('.cs_nav .cs-munu_toggle').length) {
+      $('.cs_nav').append('<span class="cs-munu_toggle"><span></span></span>');
+    }
+    if (!$('.menu-item-has-children .cs-munu_dropdown_toggle').length) {
+      $('.menu-item-has-children').append(
+        '<span class="cs-munu_dropdown_toggle"></span>',
+      );
+    }
+    $('.cs-munu_toggle').off('click').on('click', function () {
       $(this)
         .toggleClass('cs-toggle_active')
         .siblings('.cs_nav_list')
@@ -515,7 +523,7 @@
     9. Modal Video
   --------------------------------------------------------------*/
   function modalVideo() {
-    if ($.exists('.cs_video_open')) {
+    if ($.exists('.cs_video_open') && !$.exists('.cs_video_popup')) {
       $('body').append(`
         <div class="cs_video_popup">
           <div class="cs_video_popup-overlay"></div>
@@ -532,7 +540,8 @@
           </div>
         </div>
       `);
-      $(document).on('click', '.cs_video_open', function (e) {
+    }
+    $(document).off('click', '.cs_video_open').on('click', '.cs_video_open', function (e) {
         e.preventDefault();
         var video = $(this).attr('href');
 
@@ -540,16 +549,13 @@
 
         $('.cs_video_popup').addClass('active');
       });
-      $('.cs_video_popup-close, .cs_video_popup-layer').on(
-        'click',
-        function (e) {
+      $(document).off('click', '.cs_video_popup-close, .cs_video_popup-layer').on('click', '.cs_video_popup-close, .cs_video_popup-layer', function (e) {
           $('.cs_video_popup').removeClass('active');
           $('html').removeClass('overflow-hidden');
           $('.cs_video_popup-container iframe').attr('src', 'about:blank');
           e.preventDefault();
-        },
+        }
       );
-    }
   }
 
   /*--------------------------------------------------------------

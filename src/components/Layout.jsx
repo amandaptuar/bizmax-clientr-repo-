@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -18,6 +18,8 @@ const loadScript = (src) =>
 });
 
 const Layout = () => {
+  const { pathname } = useLocation();
+
   useEffect(() => {
     const initTemplateScripts = async () => {
       // 1. Load jQuery first
@@ -36,10 +38,18 @@ const Layout = () => {
 
       // 3. Load main.js after plugins are ready
       await loadScript('/assets/js/main.js');
+
+      // 4. Initialize scripts if they are already loaded (for subsequent route changes)
+      if (window.bizmax_init_scripts) {
+        // Essential to wait for React to finish rendering the new route
+        setTimeout(() => {
+          window.bizmax_init_scripts();
+        }, 100);
+      }
     };
 
     initTemplateScripts();
-  }, []);
+  }, [pathname]);
 
   return (
     <>

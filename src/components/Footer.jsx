@@ -11,10 +11,10 @@ const Footer = () => {
             <h3 className="text-accent fw-normal cs_mb_4 cs_fs_16 cs_lh_lg">Have Any Question?</h3>
             <h2 className="text-white fw-medium m-0 cs_fs_22">+ 070 4531 9507 </h2>
           </div>
-          <div className="cs_footer_logo wow zoomIn" data-wow-duration="0.8s" data-wow-delay="0.2s"><img src="/assets/img/logo.svg" alt="Logo" /></div>
+          <div className="cs_footer_logo wow zoomIn" data-wow-duration="0.8s" data-wow-delay="0.2s"><img src="/assets/img/limitless-logo.jpeg" alt="Logo" style={{ maxHeight: '120px', mixBlendMode: 'screen' }} /></div>
           <div className="cs_footer_contact_info">
             <h3 className="text-accent fw-normal cs_mb_4 cs_fs_16 cs_lh_lg">Send Email</h3>
-            <h2 className="text-white fw-medium m-0 cs_fs_22"><a href="mailto:bizmax@laralink.com">bizmax@laralink.com</a></h2>
+            <h2 className="text-white fw-medium m-0 cs_fs_22"><a href="mailto:info@limitless.com">info@limitless.com</a></h2>
           </div>
         </div>
         <div className="cs_footer_main cs_pt_30 cs_pb_30">
@@ -22,7 +22,7 @@ const Footer = () => {
             <div className="col-lg-4">
               <div className="cs_footer_item cs_pt_20 cs_pb_20">
                 <div className="cs_text_widget">
-                  <p>I've been using [business name] for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
+                  <p>I've been using Limitless for the past year and I'm so glad I did. Their products and services are top-notch and their customer service is amazing. I would highly recommend them to anyone</p>
                 </div>
                 <div className="cs_social_btns d-flex flex-wrap cs_column_gap_15 cs_row_gap_15 cs_transition_5">
                   <a href="#" className="d-flex align-items-center justify-content-center cs_height_35 cs_width_35 text-white rounded-circle"><i className="fa-brands fa-facebook-f"></i></a>
@@ -67,7 +67,7 @@ const Footer = () => {
       </div>
       <div className="cs_copyright text-center cs_fs_124 cs_lh_lg cs_pt_36 cs_pb_36">
         <div className="container">
-          <p className="m-0">Copyright © 2023 <Link to="/">bizmax</Link>. All rights reserved.</p>
+          <p className="m-0">Copyright © 2023 <Link to="/">Limitless</Link>. All rights reserved.</p>
         </div>
       </div>
     </footer>
