@@ -7,8 +7,7 @@ const Home = () => {
 
     
     
-    <section className="cs_hero cs_style_4 bg-primary position-relative d-flex align-items-center justify-content-center overflow-hidden youtube-bg" data-src="/assets/img/hero_video_bg.jpeg">
-      <div id="bgndVideo" className="player" data-property="{videoURL:'https://www.youtube.com/embed/I2SeBj6R-mc', containment:'.youtube-bg',autoPlay:true, mute:true, startAt:1, opacity:1, showControls:false, loop:true}"></div>
+    <section className="cs_hero cs_style_4 bg-primary position-relative d-flex align-items-center justify-content-center overflow-hidden" style={{ backgroundImage: "url('/assets/img/hero_video_bg.jpeg')" }}>
       <div className="container position-relative cs_zindex_2">
         <div className="cs_hero_text">
           <h1 className="text-white cs_mb_28 cs_fs_60 cs_fs_lg_46">Strategic Solutions for Business Growth Your Path to Success</h1>
