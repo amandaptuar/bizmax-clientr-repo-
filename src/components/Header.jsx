@@ -1,7 +1,16 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { NavLink, Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (window.jQuery) {
+      window.jQuery('.cs-munu_toggle').removeClass('cs-toggle_active');
+      window.jQuery('.cs_nav_list').css("display", "");
+    }
+  }, [location.pathname]);
+
   return (
     <>
 <header className="cs_site_header cs_style_1 cs_sticky_header cs_site_header_full_width">
@@ -15,44 +24,32 @@ const Header = () => {
               <div className="cs_nav cs_primary_font fw-medium">
                 <ul className="cs_nav_list fw-medium text-uppercase">
                   <li className="menu-item-has-children">
-                    <Link to="/">Home</Link>
-
-                    {/* if a person is intrested in list he/she can add the list by uncommenting below code  */}
-                    {/* <ul>
-                      <li><Link to="/">Business</Link></li>
-                      <li><Link to="/corporate">Corporate</Link></li>
-                      <li><Link to="/finance">Financial institute</Link></li>
-                      <li><Link to="/insurance">Insurance Company</Link></li>
-                      <li><Link to="/consulting">Consulting Agency</Link></li>
-                      <li><Link to="/software-agency">Software Agency</Link></li>
-                      <li><Link to="/startup-agency">Startup Agency</Link></li>
-                      <li><Link to="/business-with-ecommerce">Business With E-Commerce</Link></li>
-                    </ul> */}
+                    <NavLink to="/">Home</NavLink>
                   </li>
-                  <li><Link to="/about">About</Link></li>
+                  <li><NavLink to="/about">About</NavLink></li>
                   <li className="menu-item-has-children">
                     <a href="#">Pages</a>
                     <ul>
                       <li><Link to="/project-details">Project Details</Link></li>
                       <li><Link to="/services-details">Service Details</Link></li>
-                      <li><Link to="/team">Team </Link></li>
+                      <li><Link to="/team">Team</Link></li>
                       <li><Link to="/team-details">Team Member</Link></li>
                       <li><Link to="/pricing">Pricing Page</Link></li>
                       <li><Link to="/shop">Our Store</Link></li>
                       <li><Link to="/shop-product-details">Product Details</Link></li>
                     </ul>
                   </li>
-                  <li><Link to="/services">Services</Link></li>
-                  <li><Link to="/portfolio">Portfolio</Link></li>
+                  <li><NavLink to="/services">Services</NavLink></li>
+                  <li><NavLink to="/portfolio">Portfolio</NavLink></li>
                   <li className="menu-item-has-children">
-                    <Link to="blog">Blog</Link>
+                    <Link to="/blog">Blog</Link>
                     <ul>
                       <li><Link to="/blog-grid">Blog Grid</Link></li>
                       <li><Link to="/blog-list-with-sidebar">Blog List With Sidebar</Link></li>
                       <li><Link to="/blog-details">Blog Details</Link></li>
                     </ul>
                   </li>
-                  <li><Link to="/contact">Contact</Link></li>
+                  <li><NavLink to="/contact">Contact</NavLink></li>
                 </ul>
               </div>
             </div>

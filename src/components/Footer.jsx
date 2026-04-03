@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -36,15 +36,15 @@ const Footer = () => {
               <div className="cs_footer_item cs_pt_20 cs_pb_20">
                 <h2 className="cs_widget_title text-white cs_fs_22 cs_mb_22">Explore</h2>
                 <ul className="cs_menu_widget text-uppercase">
-                  <li><Link to="/about">About</Link></li>
-                  <li><Link to="/portfolio">Portfolio</Link></li>
-                  <li><Link to="/services">Services</Link></li>
+                  <li><NavLink to="/about">About</NavLink></li>
+                  <li><NavLink to="/portfolio">Portfolio</NavLink></li>
+                  <li><NavLink to="/services">Services</NavLink></li>
                   <li><a href="#">Support </a></li>
-                  <li><Link to="/pricing">Pricing Page</Link></li>
-                  <li><Link to="/portfolio">New Projects</Link></li>
-                  <li><Link to="/blog-list-with-sidebar">Blog</Link></li>
-                  <li><a href="">Privacy Policy</a></li>
-                  <li><Link to="/contact">Contact</Link></li>
+                  <li><NavLink to="/pricing">Pricing Page</NavLink></li>
+                  <li><NavLink to="/portfolio">New Projects</NavLink></li>
+                  <li><NavLink to="/blog-list-with-sidebar">Blog</NavLink></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><NavLink to="/contact">Contact</NavLink></li>
                 </ul>
               </div>
             </div>
