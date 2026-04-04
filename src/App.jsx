@@ -7,6 +7,8 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 import JoinProgram from './pages/JoinProgram';
 import Testimonials from './pages/Testimonials';
+import Results from './pages/Results';
+import ProjectDetails from './pages/ProjectDetails';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="join-program" element={<JoinProgram />} />
           <Route path="testimonials" element={<Testimonials />} />
+          <Route path="results" element={<Results />} />
+          <Route path="results/:id" element={<ProjectDetails />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>
