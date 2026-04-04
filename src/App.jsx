@@ -5,6 +5,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
+import JoinProgram from './pages/JoinProgram';
+import Testimonials from './pages/Testimonials';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="services" element={<Services />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="join-program" element={<JoinProgram />} />
+          <Route path="testimonials" element={<Testimonials />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>

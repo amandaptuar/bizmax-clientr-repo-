@@ -443,7 +443,7 @@ const Home = () => {
     
 
     
-    <section className="background-top-filled cs_pt_133 cs_pt_lg_75 cs_pb_140 cs_pb_lg_80" data-src="/assets/img/gallery_bg.jpeg">
+    <section id="results" className="background-top-filled cs_pt_133 cs_pt_lg_75 cs_pb_140 cs_pb_lg_80" data-src="/assets/img/gallery_bg.jpeg">
       <div className="container">
         <div className="cs_section_heading cs_style_1 text-center cs_mb_60 cs_mb_lg_40">
           <div className="cs_section_heading_in">
@@ -508,7 +508,7 @@ const Home = () => {
     
 
     
-    <section className="cs_pt_133 cs_pt_lg_73 cs_pb_133 cs_pb_lg_75">
+    <section id="testimonials" className="cs_pt_133 cs_pt_lg_73 cs_pb_133 cs_pb_lg_75">
       <div className="container">
         <div className="cs_section_heading cs_style_1 d-flex align-items-center text-center cs_mb_60 cs_mb_lg_40">
           <div className="cs_section_heading_in">

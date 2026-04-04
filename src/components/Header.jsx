@@ -11,6 +11,18 @@ const Header = () => {
     }
   }, [location.pathname]);
 
+  useEffect(() => {
+    const hash = location.hash;
+    if (hash) {
+      const element = document.getElementById(hash.substring(1));
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, [location.pathname, location.hash]);
+
   return (
     <>
 <header className="cs_site_header cs_style_1 cs_sticky_header cs_site_header_full_width">
@@ -27,28 +39,10 @@ const Header = () => {
                     <NavLink to="/">Home</NavLink>
                   </li>
                   <li><NavLink to="/about">About</NavLink></li>
-                  <li className="menu-item-has-children">
-                    <a href="#">Pages</a>
-                    <ul>
-                      <li><Link to="/project-details">Project Details</Link></li>
-                      <li><Link to="/services-details">Service Details</Link></li>
-                      <li><Link to="/team">Team</Link></li>
-                      <li><Link to="/team-details">Team Member</Link></li>
-                      <li><Link to="/pricing">Pricing Page</Link></li>
-                      <li><Link to="/shop">Our Store</Link></li>
-                      <li><Link to="/shop-product-details">Product Details</Link></li>
-                    </ul>
-                  </li>
+                  <li><NavLink to="/testimonials">Testimonials</NavLink></li>
+                  <li><Link to="/#results">Results</Link></li>
                   <li><NavLink to="/services">Services</NavLink></li>
-                  <li><NavLink to="/portfolio">Portfolio</NavLink></li>
-                  <li className="menu-item-has-children">
-                    <Link to="/blog">Blog</Link>
-                    <ul>
-                      <li><Link to="/blog-grid">Blog Grid</Link></li>
-                      <li><Link to="/blog-list-with-sidebar">Blog List With Sidebar</Link></li>
-                      <li><Link to="/blog-details">Blog Details</Link></li>
-                    </ul>
-                  </li>
+                  <li><NavLink to="/join-program">Join Program</NavLink></li>
                   <li><NavLink to="/contact">Contact</NavLink></li>
                 </ul>
               </div>
