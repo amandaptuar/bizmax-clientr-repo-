@@ -36,14 +36,12 @@ const Footer = () => {
               <div className="cs_footer_item cs_pt_20 cs_pb_20">
                 <h2 className="cs_widget_title text-white cs_fs_22 cs_mb_22">Explore</h2>
                 <ul className="cs_menu_widget text-uppercase">
+                  <li><NavLink to="/">Home</NavLink></li>
                   <li><NavLink to="/about">About</NavLink></li>
-                  <li><NavLink to="/portfolio">Portfolio</NavLink></li>
                   <li><NavLink to="/services">Services</NavLink></li>
-                  <li><a href="#">Support </a></li>
                   <li><NavLink to="/join-program">Join Program</NavLink></li>
-                  <li><NavLink to="/portfolio">New Projects</NavLink></li>
-                  <li><NavLink to="/blog-list-with-sidebar">Blog</NavLink></li>
-                  <li><a href="#">Privacy Policy</a></li>
+                  <li><NavLink to="/testimonials">Testimonials</NavLink></li>
+                  <li><NavLink to="/results">Results</NavLink></li>
                   <li><NavLink to="/contact">Contact</NavLink></li>
                 </ul>
               </div>
