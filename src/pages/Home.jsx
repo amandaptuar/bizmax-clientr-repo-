@@ -51,14 +51,14 @@ const Home = () => {
             <div className="cs_about cs_style_1">
               <div className="cs_section_heading cs_style_1 d-flex align-items-center cs_mb_15">
                 <div className="cs_section_heading_in">
-                  <h3 className="cs_fs_20 cs_fs_lg_18 text-accent fw-normal cs_lh_base cs_mb_10 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">About Us</h3>
-                  <h2 className="cs_fs_48 cs_fs_lg_36 cs_mb_20">Get Ready for Success with <img src="/assets/img/limitless-logo.jpeg" alt="Limitless" style={{ maxHeight: '40px', mixBlendMode: 'screen', verticalAlign: 'middle' }} /> Your Path to Growth.</h2>
-                  <p className="m-0">Providing legal advice, contract drafting, compliance assistance, intellectual property protection, and other legal support for businesses. Creating visual content, such as logos, brochures, infographics, and other branding materials.</p>
+                  <h3 className="cs_fs_20 cs_fs_lg_18 text-accent fw-normal cs_lh_base cs_mb_10 wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">Get Ready for success</h3>
+                  <h2 className="cs_fs_48 cs_fs_lg_36 cs_mb_20">Transform Your Life, Naturally with <img src="/assets/img/limitless-logo.jpeg" alt="Limitless" style={{ maxHeight: '52px', mixBlendMode: 'screen', verticalAlign: 'middle' }} /> Limitless Wellness</h2>
+                  <p className="m-0">We provide personalized nutrition plans, continuous guidance, and a supportive community to help you reach your goals without extreme diets or heavy workouts. Our approach is simple, sustainable, and designed for real results.</p>
                 </div>
               </div>
               <div className="cs_progressbar cs_style_1 cs_mb_20">
                 <div className="cs_progressbar_heading d-flex justify-content-between align-items-center cs_mb_8">
-                  <h3 className="fw-medium m-0 cs_fs_18">Web development</h3>
+                  <h3 className="fw-medium m-0 cs_fs_18">Wellness & Health Zone</h3>
                   <p className="cs_fs_14 cs_lh_base m-0">90%</p>
                 </div>
                 <div className="cs_progress cs_rounded_8 overflow-hidden" data-progress="90">
@@ -69,15 +69,15 @@ const Home = () => {
                 <div className="col-lg-6">
                   <div className="cs_about-icon-box position-relative cs_mb_25">
                     <span className="position-absolute cs_height_20 cs_width_20 top-0 start-0 cs_mt_5 bg-accent text-white cs_fs_10 d-flex align-items-center justify-content-center cs_rounded_30"><i className="fa-solid fa-angles-right"></i></span>
-                    <h3 className="cs_fs_16 cs_pl_35 cs_mb_12 cs_lh_lg">Accounting and Bookkeeping</h3>
-                    <p className="m-0">Services related to financial record-keeping, bookkeeping.</p>
+                    <h3 className="cs_fs_16 cs_pl_35 cs_mb_12 cs_lh_lg">Lose Weight, Gain Confidence</h3>
+                    <p className="m-0">Whether your goal is weight loss, weight gain, inch loss, or overall wellness</p>
                   </div>
                 </div>
                 <div className="col-lg-6">
                   <div className="cs_about-icon-box position-relative cs_mb_25">
                     <span className="position-absolute cs_height_20 cs_width_20 top-0 start-0 cs_mt_5 bg-accent text-white cs_fs_10 d-flex align-items-center justify-content-center cs_rounded_30"><i className="fa-solid fa-angles-right"></i></span>
-                    <h3 className="cs_fs_16 cs_pl_35 cs_mb_12 cs_lh_lg">Human Resources (HR) Consulting</h3>
-                    <p className="m-0">Assistance with HR-related tasks such as recruitment.</p>
+                    <h3 className="cs_fs_16 cs_pl_35 cs_mb_12 cs_lh_lg">Expert Guidance</h3>
+                    <p className="m-0">Take the first step towards a healthier, more confident you. Join Limitless Wellness and experience real transformation.</p>
                   </div>
                 </div>
               </div>
@@ -112,7 +112,7 @@ const Home = () => {
         <div className="cs_section_heading cs_style_1 text-center cs_mb_60 cs_mb_lg_40">
           <div className="cs_section_heading_in">
             <h3 className="cs_fs_20 text-accent fw-normal cs_lh_base wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Our Service List</h3>
-            <h2 className="cs_fs_48 cs_fs_lg_36 m-0">We Provide Various <br />Insurance For Our Clients</h2>
+            <h2 className="cs_fs_48 cs_fs_lg_36 m-0">We Provide Various <br />Health & Wellness Consultations</h2>
           </div>
         </div>
       </div>
@@ -139,9 +139,9 @@ const Home = () => {
                       </defs>
                     </svg>                
                   </div>
-                  <h2 className="cs_lh_base cs_fs_20 cs_fs_lg_18 m-0"><Link to="/contact" className="inline-block">Human Resources <br />Consulting</Link></h2>
+                  <h2 className="cs_lh_base cs_fs_20 cs_fs_lg_18 m-0"><Link to="/contact" className="inline-block">The Limitless <br />Cognitive Audit</Link></h2>
                 </div>
-                <p className="cs_mb_20">Our expert consultants work closely with you to develop tailored financial strategies that align with your short-term and long-term aspirations.</p>
+                <p className="cs_mb_20">Baseline your biology. Take the Audit. Deep-dive intake scoring across Cognitive, Energy, and Resilience pillars.</p>
                 <div className="text-primary">
                   <Link to="/contact" className="cs_post_btn_2 d-inline-flex justify-content-between align-items-center cs_column_gap_10">
                     <span className="cs_post_btn-text">Read More</span>
@@ -175,9 +175,9 @@ const Home = () => {
                       </defs>
                     </svg>                
                   </div>
-                  <h2 className="cs_lh_base cs_fs_20 cs_fs_lg_18 m-0"><Link to="/services-details" className="inline-block">Strategy <br />Consulting</Link></h2>
+                  <h2 className="cs_lh_base cs_fs_20 cs_fs_lg_18 m-0"><Link to="/services-details" className="inline-block">Performance <br />Bottleneck</Link></h2>
                 </div>
-                <p className="cs_mb_20">Our expert consultants work closely with you to develop tailored financial strategies that align with your short-term and long-term aspirations.</p>
+                <p className="cs_mb_20">Identification of your #1 performance bottleneck.</p>
                 <div className="text-primary">
                   <Link to="/contact" className="cs_post_btn_2 d-inline-flex justify-content-between align-items-center cs_column_gap_10">
                     <span className="cs_post_btn-text">Read More</span>
@@ -211,9 +211,9 @@ const Home = () => {
                       </defs>
                     </svg>                                                       
                   </div>
-                  <h2 className="cs_lh_base cs_fs_20 cs_fs_lg_18 m-0"><Link to="/services-details" className="inline-block">Risk Management <br />Consulting</Link></h2>
+                  <h2 className="cs_lh_base cs_fs_20 cs_fs_lg_18 m-0"><Link to="/services-details" className="inline-block">Personalized <br />Protocol</Link></h2>
                 </div>
-                <p className="cs_mb_20">Our expert consultants work closely with you to develop tailored financial strategies that align with your short-term and long-term aspirations.</p>
+                <p className="cs_mb_20">Your personalized 7-Day Limitless Protocol (delivered via PDF).</p>
                 <div className="text-primary">
                   <Link to="/contact" className="cs_post_btn_2 d-inline-flex justify-content-between align-items-center cs_column_gap_10">
                     <span className="cs_post_btn-text">Read More</span>
@@ -246,9 +246,9 @@ const Home = () => {
                       </defs>
                     </svg>
                   </div>
-                  <h2 className="cs_lh_base cs_fs_20 cs_fs_lg_18 m-0"><Link to="/services-details" className="inline-block">Legal <br />Consulting</Link></h2>
+                  <h2 className="cs_lh_base cs_fs_20 cs_fs_lg_18 m-0"><Link to="/services-details" className="inline-block">Daily SMS <br />Nudges</Link></h2>
                 </div>
-                <p className="cs_mb_20">Our expert consultants work closely with you to develop tailored financial strategies that align with your short-term and long-term aspirations.</p>
+                <p className="cs_mb_20">Bonus: 7 days of daily SMS accountability nudges.</p>
                 <div className="text-primary">
                   <Link to="/contact" className="cs_post_btn_2 d-inline-flex justify-content-between align-items-center cs_column_gap_10">
                     <span className="cs_post_btn-text">Read More</span>
@@ -279,9 +279,9 @@ const Home = () => {
                       </defs>
                     </svg>                
                   </div>
-                  <h2 className="cs_lh_base cs_fs_20 cs_fs_lg_18 m-0"><Link to="/services-details" className="inline-block">Human Resources <br />Consulting</Link></h2>
+                  <h2 className="cs_lh_base cs_fs_20 cs_fs_lg_18 m-0"><Link to="/contact" className="inline-block">The Limitless <br />Cognitive Audit</Link></h2>
                 </div>
-                <p className="cs_mb_20">Our expert consultants work closely with you to develop tailored financial strategies that align with your short-term and long-term aspirations.</p>
+                <p className="cs_mb_20">Baseline your biology. Take the Audit. Deep-dive intake scoring across Cognitive, Energy, and Resilience pillars.</p>
                 <div className="text-primary">
                   <Link to="/contact" className="cs_post_btn_2 d-inline-flex justify-content-between align-items-center cs_column_gap_10">
                     <span className="cs_post_btn-text">Read More</span>
@@ -315,9 +315,9 @@ const Home = () => {
                       </defs>
                     </svg>                
                   </div>
-                  <h2 className="cs_lh_base cs_fs_20 cs_fs_lg_18 m-0"><Link to="/contact" className="inline-block">Strategy <br />Consulting</Link></h2>
+                  <h2 className="cs_lh_base cs_fs_20 cs_fs_lg_18 m-0"><Link to="/services-details" className="inline-block">Performance <br />Bottleneck</Link></h2>
                 </div>
-                <p className="cs_mb_20">Our expert consultants work closely with you to develop tailored financial strategies that align with your short-term and long-term aspirations.</p>
+                <p className="cs_mb_20">Identification of your #1 performance bottleneck.</p>
                 <div className="text-primary">
                   <Link to="/contact" className="cs_post_btn_2 d-inline-flex justify-content-between align-items-center cs_column_gap_10">
                     <span className="cs_post_btn-text">Read More</span>
@@ -351,9 +351,9 @@ const Home = () => {
                       </defs>
                     </svg>                                                       
                   </div>
-                  <h2 className="cs_lh_base cs_fs_20 cs_fs_lg_18 m-0"><Link to="/services-details" className="inline-block">Risk Management <br />Consulting</Link></h2>
+                  <h2 className="cs_lh_base cs_fs_20 cs_fs_lg_18 m-0"><Link to="/services-details" className="inline-block">Personalized <br />Protocol</Link></h2>
                 </div>
-                <p className="cs_mb_20">Our expert consultants work closely with you to develop tailored financial strategies that align with your short-term and long-term aspirations.</p>
+                <p className="cs_mb_20">Your personalized 7-Day Limitless Protocol (delivered via PDF).</p>
                 <div className="text-primary">
                   <Link to="/contact" className="cs_post_btn_2 d-inline-flex justify-content-between align-items-center cs_column_gap_10">
                     <span className="cs_post_btn-text">Read More</span>
@@ -386,9 +386,9 @@ const Home = () => {
                       </defs>
                     </svg>
                   </div>
-                  <h2 className="cs_lh_base cs_fs_20 cs_fs_lg_18 m-0"><Link to="/services-details" className="inline-block">Legal <br />Consulting</Link></h2>
+                  <h2 className="cs_lh_base cs_fs_20 cs_fs_lg_18 m-0"><Link to="/services-details" className="inline-block">Daily SMS <br />Nudges</Link></h2>
                 </div>
-                <p className="cs_mb_20">Our expert consultants work closely with you to develop tailored financial strategies that align with your short-term and long-term aspirations.</p>
+                <p className="cs_mb_20">Bonus: 7 days of daily SMS accountability nudges.</p>
                 <div className="text-primary">
                   <Link to="/contact" className="cs_post_btn_2 d-inline-flex justify-content-between align-items-center cs_column_gap_10">
                     <span className="cs_post_btn-text">Read More</span>
@@ -448,7 +448,7 @@ const Home = () => {
         <div className="cs_section_heading cs_style_1 text-center cs_mb_60 cs_mb_lg_40">
           <div className="cs_section_heading_in">
             <h3 className="cs_fs_20 text-accent fw-normal cs_lh_base wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Our Latest Project</h3>
-            <h2 className="cs_fs_48 cs_fs_lg_36 m-0">Explore Our Best <br />Recent Work Projects</h2>
+            <h2 className="cs_fs_48 cs_fs_lg_36 m-0">Explore our Best <br />Results and Transformation</h2>
           </div>
         </div>
         <ul className="cs_isotop_filter cs_style_1 d-flex justify-content-center flex-wrap m-0 cs_pl_0 cs_pb_30">
@@ -730,9 +730,9 @@ const Home = () => {
             <div className="cs_statis_text_section">
               <div className="cs_section_heading cs_style_1 cs_mb_50">
                 <div className="cs_section_heading_in">
-                  <h3 className="cs_fs_20 text-accent fw-normal cs_lh_base wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">Company’s Statistic</h3>
-                  <h2 className="cs_fs_48 cs_fs_lg_36 cs_mb_20">Achievements of Our Limitless Finance</h2>
-                  <p className="m-0">Providing legal advice, contract drafting, compliance assistance, intellectual property protection, and other legal support.</p>
+                  <h3 className="cs_fs_20 text-accent fw-normal cs_lh_base wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">Achievement...............</h3>
+                  <h2 className="cs_fs_48 cs_fs_lg_36 cs_mb_20">Best Achievement of our Limitless Zone</h2>
+                  <p className="m-0">Where Results Are Proven and Transformations Are Real, We track your progress every day to keep you on the right path. Our experts provide regular feedback and necessary adjustments. You receive one-on-one support tailored to your goals. Ensuring consistency, motivation, and long-term results.</p>
                 </div>
               </div>
               <div className="row cs_row_gap_24">
